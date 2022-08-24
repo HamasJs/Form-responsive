@@ -1,0 +1,181 @@
+@import url();
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.whole {
+  display: flex;
+}
+
+.images {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 919px;
+}
+.for {
+  background-color: #482f30;
+  width: 70%;
+}
+.text {
+  display: flex;
+  color: white;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -207%);
+  background-color: rgba(37, 21, 22, 0.57);
+  padding: 20px 39.7%;
+}
+.heading {
+  font-size: xx-large;
+  font-weight: 400;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+.main-text {
+  line-height: 30px;
+}
+.second-text {
+  padding-top: 30px;
+}
+
+.text-form {
+  font-weight: bolder;
+  color: white;
+  padding-left: 135px;
+  padding-top: 150px;
+  font-size: x-large;
+  width: 50%;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 95px;
+  padding-left: 90px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #8e2e44;
+  color: white;
+}
+
+.input-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 42px;
+  padding-bottom: 15px;
+  width: 35%;
+}
+
+.sign-in {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid #482f30;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 125px;
+  background-color: #8e2e44;
+  color: white;
+}
+
+.sign-in:hover {
+  background-color: #482f30;
+  border: 1px solid #8e2e44;
+}
+
+.account-login {
+  margin-top: 25px;
+  margin-left: 125px;
+  color: white;
+}
+
+#FirstName:focus {
+  outline: none;
+  border-color: #482f30;
+}
+
+.login {
+  text-decoration: none;
+  color: #e65979;
+  font-weight: bolder;
+}
+
+/* Responsivenes */
+@media all and (max-width: 480px) {
+  .whole {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    width: auto;
+    height: 500px;
+  }
+  .for {
+    width: 100%;
+  }
+  .text {
+    left: 44%;
+  }
+  .main-form {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .text-form {
+    padding-top: 75px;
+    width: auto;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .account-login {
+    text-align: center;
+    margin-left: auto;
+    padding-bottom: 10px;
+  }
+  #FirstName {
+    width: 290px;
+  }
+}
+
+@media (min-width:480px) and (max-width: 810px) {
+  .whole {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    width: auto;
+    height: 500px;
+  }
+  .for {
+    width: 100%;
+  }
+  .main-form {
+    padding-left: 0px;
+  }
+  .text-form {
+    padding-top: 75px;
+    width: auto;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .account-login {
+    text-align: center;
+    margin-left: auto;
+    padding-bottom: 10px;
+  }
+  .text {
+    top: 73%;
+    padding: 20px 42.7%;
+  }
+  .sign-in {
+    margin-left: 330px;
+  }
+}
